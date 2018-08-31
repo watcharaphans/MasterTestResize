@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void chooseImage(View view) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        startActivityForResult(intent, PICK_IMAGE_REQUEST);
+        startActivityForResult(intent, 1);
     }
 
     public void compressImage(View view) {
